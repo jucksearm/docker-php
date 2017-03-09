@@ -1,0 +1,10 @@
+#!/bin/bash
+set -e
+
+git config --global user.name "jucksearm"
+git config --global user.email "jucksearm@mol.com"
+git config --global http.sslVerify false
+
+composer config -g github-oauth.github.com b65133877d787bc15f49387dc256462831f75efe
+
+composer update
